@@ -1,0 +1,756 @@
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="Attendance">
+<mat-grid-list cols="5" rowHeight="3:1">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile><button class="button button1" (click)="openDialog()" >Regulariztion</button></mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="3" rowHeight="8:9">
+  <mat-grid-tile>
+  <mat-card class="mat-elevation-z8">
+    <mat-card-title class="card1" >Time Sheet</mat-card-title>
+    <mat-card-subtitle align="right">10/10/2010</mat-card-subtitle>
+    <mat-card-content>
+      <div>
+        <h2 class="mat-card-subtitle" align="left">Punched in at: 10:00</h2>
+      </div>
+      <div class="rcorners1">
+        <h3 align="left">Total Time</h3>
+        <p class="mat-card-subtitle" align="left" style="font-size: 20px">
+          1:00
+        </p>
+        <h3 align="right" >
+          Break 1:00
+          <br/>
+          Overtime  1:00
+        </h3>
+      </div>
+      <br/>
+      <button class="button1" >Punch In</button>
+
+    </mat-card-content>
+  </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title class="card2">Statistics</mat-card-title>
+      <mat-card-content>
+        <mat-list role="list" >
+          <mat-list-item role="listitem"><span class="material-icons" style="color: #62b52a" >
+ arrow_forward
+ </span>Punch In<br>10:00</mat-list-item>
+          <mat-list-item role="listitem"><span class="material-icons" style="color: #d91c1c" >
+ arrow_back
+ </span>Punch Out<br>10:00</mat-list-item>
+          <mat-list-item role="listitem"><span class="material-icons" style="color: #62b52a" >
+ arrow_forward
+ </span>Punch In<br>10:00</mat-list-item>
+          <mat-list-item role="listitem"><span class="material-icons" style="color: #d91c1c">
+ arrow_back
+ </span>Punch Out<br>10:00</mat-list-item>
+          <mat-list-item role="listitem"><span class="material-icons" style="color: #62b52a" >
+ arrow_forward
+ </span>Punch In<br>10:00</mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title class="card3">Today's Activity</mat-card-title>
+      <mat-card-content>
+        <div class="contentContainer">
+          <div class="skillBar">
+            <h4>Today : 166 / 200 hr</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
+            </div>
+          </div>
+
+          <div class="skillBar">
+            <h4>This Month : 166 / 200h hr</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
+          </div>
+
+          <div class="skillBar">
+            <h4>This Week : 166 / 200 hr</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+          </div>
+
+          <div class="skillBar">
+            <h4>Total : 166 / 200 hr</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-20"></div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="10:1">
+      <mat-grid-tile><form class="booking-form form-inline" action="#!" >
+        <input type="date" id="quantity" placeholder="Adults" name="text">
+        <input type="date" id="quantity" placeholder="Adults" name="text">
+        <button class="booking-form--submit">Search</button>
+      </form>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="4:1">
+      <mat-grid-tile>
+        <table class="mat-elevation-z8" width="95%" align="center">
+          <tr>
+            <th>Serial No.</th>
+            <th>Date</th>
+            <th>Punch In</th>
+            <th>Punch Out</th>
+            <th>Production</th>
+            <th>Break</th>
+            <th>Overtime</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>12/02/2018</td>
+            <td>10:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>12/02/2018</td>
+            <td>10:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>12/02/2018</td>
+            <td>10:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>12/02/2018</td>
+            <td>10:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>12/02/2018</td>
+            <td>10:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>04:00</td>
+            <td>none</td>
+          </tr>
+        </table>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+  <mat-tab label="Attendance(Admin)">
+    <mat-grid-list cols="1" rowHeight="10:1">
+      <mat-grid-tile><form class="booking-form form-inline" action="#!" >
+        <input id="quantity" name="text" placeholder="Employee Name" type="text">
+        <select class="soflow" id="location" name="location">
+          <option >January</option>
+          <option >Feb</option>
+          <option >MAr</option>
+          <option >April</option>
+          <option >may</option>
+          <option >june</option>
+          <option >july</option>
+          <option >Aug</option>
+          <option >Sept</option>
+          <option >Oct</option>
+          <option >Nov</option>
+          <option >Dec</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Year" name="text">
+        <button class="booking-form--submit">Search</button>
+      </form>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="4:1" >
+    <mat-grid-tile>
+        <table class="table" class="mat-elevation-z8" width="95%" align="center">
+          <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Employee</th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
+            <th scope="col">6</th>
+            <th scope="col">7</th>
+            <th scope="col">8</th>
+            <th scope="col">9</th>
+            <th scope="col">10</th>
+            <th scope="col">11</th>
+            <th scope="col">12</th>
+            <th scope="col">13</th>
+            <th scope="col">14</th>
+            <th scope="col">15</th>
+            <th scope="col">16</th>
+            <th scope="col">17</th>
+            <th scope="col">18</th>
+            <th scope="col">19</th>
+            <th scope="col">20</th>
+            <th scope="col">21</th>
+            <th scope="col">22</th>
+            <th scope="col">23</th>
+            <th scope="col">24</th>
+            <th scope="col">25</th>
+            <th scope="col">26</th>
+            <th scope="col">27</th>
+            <th scope="col">28</th>
+            <th scope="col">29</th>
+            <th scope="col">30</th>
+            <th scope="col">31</th>
+          </tr>
+          <tr><td>123</td>
+            <td><mat-icon>account_circle</mat-icon> <p>Anup Bye</p></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span>
+              <br>
+              <span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+          </tr>
+          <tr><td>123</td>
+            <td><mat-icon>account_circle</mat-icon> <p>Anup Bye</p></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span>
+              <br>
+              <span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+          </tr>
+          <tr><td>123</td>
+            <td><mat-icon>account_circle</mat-icon> <p>Anup Bye</p></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span>
+              <br>
+              <span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+          </tr>
+          <tr><td>123</td>
+            <td><mat-icon>account_circle</mat-icon> <p>Anup Bye</p></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span>
+              <br>
+              <span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+          </tr>
+          <tr><td>123</td>
+            <td><mat-icon>account_circle</mat-icon> <p>Anup Bye</p></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span>
+              <br>
+              <span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #d91c1c">
+clear
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+clear
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons"style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+            <td><span class="material-icons" style="color: #62b52a">
+check
+</span></td>
+          </tr>
+
+        </table>
+    </mat-grid-tile>
+
+    </mat-grid-list>
+  </mat-tab>
+
+</mat-tab-group>

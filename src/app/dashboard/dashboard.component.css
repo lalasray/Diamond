@@ -1,0 +1,84 @@
+mat-card{
+  min-height:230px;
+  min-width:280px;
+  border-radius: 12px;
+  background-color: #f1eded;
+}
+
+mat-card-title{
+  background:rgba(0,0,0,.06);
+  padding:10px 10px;
+  font-size:18px;
+  color: #f2f2f2;
+  border-radius: 6px;
+  text-align: center;
+}
+.card1{
+  background-color: #3ab44a;
+
+}
+.card2{
+  background-color: #2b9db2;
+
+}
+.card3{
+  background-color: #eca40e;
+
+}
+.card4{
+  background-color: #e73238;
+
+}
+mat-card-content{
+  padding:10px 10px;
+  text-align:center;
+  color: #1f211f;
+  font-size: 16px;
+}
+
+.button1 {
+  background-color: #436f9b;
+  color: #ffffff;
+  border: 2px solid #436f9b;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 3px 3px #e9e4e4;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #f44336;
+  border: 2px solid #f44336;
+}
+
+table {
+  border: 3px solid white;
+  border-collapse:separate;
+  border-radius:12px;
+}
+th, td {
+  padding: 2px;
+  text-align: left;
+  border-radius:4px;
+}
+
+td {
+  font-size: 16px;
+}
+
+th{
+  background-color: #e26c36;
+  color: #2b302b;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+tr:nth-child(even) {background-color: #f1eded;}
+
+tr:nth-child(odd) {background-color: #ffffff;}

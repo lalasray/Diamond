@@ -1,0 +1,259 @@
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="Payroll">
+    <mat-grid-list cols="2" rowHeight="4:1">
+      <mat-grid-tile></mat-grid-tile>
+
+      <mat-grid-tile>
+        <form class="booking-form form-inline" action="#!">
+          <select class="soflow" id="location" name="location">
+              <option >January</option>
+              <option >Feb</option>
+              <option >MAr</option>
+              <option >April</option>
+              <option >may</option>
+              <option >june</option>
+              <option >july</option>
+              <option >Aug</option>
+              <option >Sept</option>
+              <option >Oct</option>
+              <option >Nov</option>
+              <option >Dec</option>
+          </select>
+          <input type="number" id="check-in" placeholder="Year" name="check-in">
+          <button class="booking-form--submit">Search</button>
+        </form>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="6:1">
+      <mat-grid-tile><h1 class="rcorners1">PAYSLIP FOR THE MONTH OF FEB 2019</h1>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="3" rowHeight="4:1">
+      <mat-grid-tile>
+      </mat-grid-tile>
+      <mat-grid-tile>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <p>PAYSLIP #49029
+          <br/>
+        Salary Month: March, 2019
+        </p>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="3" rowHeight="4:1">
+      <mat-grid-tile>
+        <img src="companylogo.jpg" alt="company logo">Company<br/>
+        3864 Quiet Valley Lane,
+        <br/>
+        Sherman Oaks, CA, 91403
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <mat-grid-tile>
+        <p>Lala Ray
+          <br/>
+          Developer
+          <br/>
+        Employee ID:100
+          <br/>
+        Joining:10/10/10
+          <br/>
+          PF
+          <br/>
+          Bank
+          <br/>
+          Bank ACC No
+        </p>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title style="background-color:#3ab44a">Earnings</mat-card-title>
+          <mat-card-content>
+            <table class="mat-elevation-z8">
+              <tr>
+                <th>Basic Salary</th>
+                <td>$6500</td>
+              </tr>
+              <tr>
+                <th>House Rent Allowance (H.R.A.)</th>
+                <td>$6500</td>
+              </tr>
+              <tr>
+                <th>Conveyance</th>
+                <td>$6500</td>
+              </tr>
+              <tr>
+                <th>Other Allowance</th>
+                <td>$6500</td>
+              </tr>
+              <tr>
+                <th>Total Earnings</th>
+                <td>$6500</td>
+              </tr>
+          </table></mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title style="background-color:#2b9db2">Deductions</mat-card-title>
+          <mat-card-content>
+            <table class="mat-elevation-z8">
+            <tr>
+              <th>Tax Deducted at Source (T.D.S.)</th>
+              <td>$6500</td>
+            </tr>
+            <tr>
+              <th>Provident Fund</th>
+              <td>$6500</td>
+            </tr>
+            <tr>
+              <th>ESI</th>
+              <td>$6500</td>
+            </tr>
+            <tr>
+              <th>Loan</th>
+              <td>$6500</td>
+            </tr>
+            <tr>
+              <th>Total Deductions</th>
+              <td>$6500</td>
+            </tr>
+          </table></mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="2" rowHeight="4:1">
+      <mat-grid-tile>
+        <p>
+          Net Salary: $59698 (Fifty nine thousand six hundred and ninety eight only.)
+        </p>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button class="button button1" onclick="window.print()">Print this page</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+  <mat-tab label="Payroll(Admin)">
+    <mat-grid-list cols="1" rowHeight="4:1" >
+      <mat-grid-tile>
+        <form class="booking-form form-inline" action="#!">
+          <input type="text" id="check-in" placeholder="Empolyee Name " name="check-in">
+          <input type="date" id="check-in" placeholder="Check in" name="check-in">
+          <input type="date" id="check-in" placeholder="Check in" name="check-in">
+          <button class="booking-form--submit">Search</button>
+        </form>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <table class="mat-elevation-z8" width="95%" align="center">
+      <tr>
+        <th>Employee</th>
+        <th>Employee ID.</th>
+        <th>Join date</th>
+        <th>Email ID.</th>
+        <th>Designation</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Month</th>
+        <th>Year</th>
+        <th>Payslip</th>
+      </tr>
+      <tr>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>123</td>
+        <td>10/08/2020</td>
+        <td>lala@ray</td>
+        <td>Devloper</td>
+        <td>HRM</td>
+        <td>100.00</td>
+        <td>Feb</td>
+        <td>2020</td>
+        <td>
+          <button mat-raised-button color="primary">Generate Slip</button>
+        </td>
+      </tr>
+      <tr>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>123</td>
+        <td>10/08/2020</td>
+        <td>lala@ray</td>
+        <td>Devloper</td>
+        <td>HRM</td>
+        <td>100.00</td>
+        <td>Feb</td>
+        <td>2020</td>
+        <td><button mat-raised-button color="primary">Generate Slip</button></td>
+      </tr>
+      <tr>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>123</td>
+        <td>10/08/2020</td>
+        <td>lala@ray</td>
+        <td>Devloper</td>
+        <td>HRM</td>
+        <td>100.00</td>
+        <td>Feb</td>
+        <td>2020</td>
+        <td>
+          <button mat-raised-button color="primary">Generate Slip</button>
+        </td>
+      </tr><tr>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>123</td>
+      <td>10/08/2020</td>
+      <td>lala@ray</td>
+      <td>Devloper</td>
+      <td>HRM</td>
+      <td>100.00</td>
+      <td>Feb</td>
+      <td>2020</td>
+      <td>
+        <button mat-raised-button color="primary">Generate Slip</button>
+      </td>
+    </tr>
+      <tr>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>123</td>
+        <td>10/08/2020</td>
+        <td>lala@ray</td>
+        <td>Devloper</td>
+        <td>HRM</td>
+        <td>100.00</td>
+        <td>Feb</td>
+        <td>2020</td>
+        <td>
+          <button mat-raised-button color="primary">Generate Slip</button>
+        </td>
+      </tr>
+      <tr>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>123</td>
+        <td>10/08/2020</td>
+        <td>lala@ray</td>
+        <td>Devloper</td>
+        <td>HRM</td>
+        <td>100.00</td>
+        <td>Feb</td>
+        <td>2020</td>
+        <td>
+          <button mat-raised-button color="primary">Generate Slip</button>
+        </td>
+      </tr><tr>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>123</td>
+      <td>10/08/2020</td>
+      <td>lala@ray</td>
+      <td>Devloper</td>
+      <td>HRM</td>
+      <td>100.00</td>
+      <td>Feb</td>
+      <td>2020</td>
+      <td>
+        <button mat-raised-button color="primary">Generate Slip</button>
+      </td>
+    </tr>
+
+
+    </table></mat-tab>
+</mat-tab-group>

@@ -1,0 +1,144 @@
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="Dashboard">
+    <mat-grid-list cols="3" rowHeight="1:1">
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card1" >Attendance</mat-card-title>
+          <mat-card-subtitle align="right">10/10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Status Today: Present</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/attendance']" >Go to Attendance </button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card2" >Leave</mat-card-title>
+          <mat-card-subtitle align="right">20/10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Leave Status: Pending</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/leave']" >Go to Leave</button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card3" >Payroll</mat-card-title>
+          <mat-card-subtitle align="right">10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Payroll Status: Generated</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/payslip']">Go to Payroll </button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1"  rowHeight="4:1">
+      <mat-grid-tile>
+        <table class="mat-elevation-z8" width="95%" align="center">
+          <tr>
+            <th>Notifications</th>
+          </tr>
+          <tr>
+          <tr>
+            <td>This is notification1</td>
+          </tr>
+          <tr>
+            <td>This is notification2</td>
+          </tr>
+          <tr>
+          <td>This is notification3</td>
+        </tr>
+          <tr>
+          <td>This is notification4</td>
+        </tr>
+          <tr>
+          <td>This is notification5</td>
+        </tr>
+        </table>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+  <mat-tab label="Dashboard(Admin)">
+    <mat-grid-list cols="3" rowHeight="1:1">
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card1" >Attendance</mat-card-title>
+          <mat-card-subtitle align="right">10/10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Present Today: 110/120</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/attendance']" >Go to Attendance </button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card2" >Leave</mat-card-title>
+          <mat-card-subtitle align="right">20/10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Pending Leaves: 8</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/leave']" >Go to Leave</button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card3" >Payroll</mat-card-title>
+          <mat-card-subtitle align="right">10/2010</mat-card-subtitle>
+          <mat-card-content>
+            <div>
+              <h2 class="mat-card-subtitle" align="center">Payroll Status: Pending</h2>
+            </div>
+            <br/>
+            <button class="button1" href="javascript:void(0)" [routerLink]="['/payslip']">Go to Payroll </button>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1"  rowHeight="4:1">
+      <mat-grid-tile>
+        <table class="mat-elevation-z8" width="95%" align="center">
+          <tr>
+            <th>Notifications</th>
+          </tr>
+          <tr>
+          <tr>
+            <td>This is notification1</td>
+          </tr>
+          <tr>
+            <td>This is notification2</td>
+          </tr>
+          <tr>
+            <td>This is notification3</td>
+          </tr>
+          <tr>
+            <td>This is notification4</td>
+          </tr>
+          <tr>
+            <td>This is notification5</td>
+          </tr>
+        </table>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+</mat-tab-group>

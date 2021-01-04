@@ -1,0 +1,454 @@
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="Leave">
+    <mat-grid-list cols="5" rowHeight="3:1">
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile><button class="button button1" (click)="openDialog()" >Add Leave</button></mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="3:2">
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card1">Annual Leaves</mat-card-title>
+          <mat-card-content>
+            <div class="contentContainer">
+              <div class="skillBar">
+                <h4>10/10</h4>
+                <div class="skillBarContainer">
+                  <div class="skillBarValue value-80"></div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card2">Medical Leaves</mat-card-title>
+          <mat-card-content>
+            <div class="contentContainer">
+              <div class="skillBar">
+                <h4>10/10</h4>
+                <div class="skillBarContainer">
+                  <div class="skillBarValue value-80"></div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card3">Other Leaves</mat-card-title>
+          <mat-card-content>
+            <div class="contentContainer">
+              <div class="skillBar">
+                <h4>10/10</h4>
+                <div class="skillBarContainer">
+                  <div class="skillBarValue value-80"></div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="mat-elevation-z8">
+          <mat-card-title class="card4">Remaining Leaves</mat-card-title>
+          <mat-card-content>
+            <div class="contentContainer">
+              <div class="skillBar">
+                <h4>10/10</h4>
+                <div class="skillBarContainer">
+                  <div class="skillBarValue value-80"></div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <br/>
+    <br/>
+    <br/>
+    <table class="mat-elevation-z8" width="95%" align="center" >
+      <tr>
+        <th>Employee ID.</th>
+        <th>Employee</th>
+        <th>Designation</th>
+        <th>Email ID.</th>
+        <th>Reporting to</th>
+        <th>Leave Type</th>
+        <th>From</th>
+        <th>To</th>
+        <th>No of Days</th>
+        <th>Reason</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>12345</td>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>developer</td>
+        <td>lalashakti96@gmail.com</td>
+        <td>abc</td>
+        <td>Casual Leave</td>
+        <td>10/08/2020</td>
+        <td>12/08/2020</td>
+        <td>2</td>
+        <td>Vibing</td>
+        <td> Pending</td>
+        <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+          <mat-menu #action="matMenu">
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu></td>
+      </tr>
+      <tr>
+        <td>12345</td>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>developer</td>
+        <td>lalashakti96@gmail.com</td>
+        <td>abc</td>
+        <td>Casual Leave</td>
+        <td>10/08/2020</td>
+        <td>12/08/2020</td>
+        <td>2</td>
+        <td>Vibing</td>
+        <td>Active</td>
+        <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+          <mat-menu #action="matMenu">
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu></td>
+      </tr>
+      <tr>
+        <td>12345</td>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>developer</td>
+        <td>lalashakti96@gmail.com</td>
+        <td>abc</td>
+        <td>Casual Leave</td>
+        <td>10/08/2020</td>
+        <td>12/08/2020</td>
+        <td>2</td>
+        <td>Vibing</td>
+        <td> Pending</td>
+        <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+          <mat-menu #action="matMenu">
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu></td>
+      </tr>
+      <tr>
+        <td>12345</td>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>developer</td>
+        <td>lalashakti96@gmail.com</td>
+        <td>abc</td>
+        <td>Casual Leave</td>
+        <td>10/08/2020</td>
+        <td>12/08/2020</td>
+        <td>2</td>
+        <td>Vibing</td>
+        <td>
+          Active</td>
+        <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+          <mat-menu #action="matMenu">
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu></td>
+      </tr><tr>
+      <td>12345</td>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>developer</td>
+      <td>lalashakti96@gmail.com</td>
+      <td>abc</td>
+      <td>Casual Leave</td>
+      <td>10/08/2020</td>
+      <td>12/08/2020</td>
+      <td>2</td>
+      <td>Vibing</td>
+      <td> Active</td>
+      <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+        <mat-menu #action="matMenu">
+          <button mat-menu-item>
+            <mat-icon>create</mat-icon>
+            <span>Edit</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu></td>
+    </tr>
+    </table>
+  </mat-tab>
+  <mat-tab label="Leave(Admin)">
+    <br/><br/><br/><br/><br/><br/><br/>
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <mat-grid-tile><mat-card class="mat-elevation-z8">
+        <mat-card-title class="card1">Present Today</mat-card-title>
+        <mat-card-content>
+          <div class="contentContainer">
+            <div class="skillBar">
+              <h4>107/110</h4>
+              <div class="skillBarContainer">
+                <div class="skillBarValue value-90"></div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card></mat-grid-tile>
+      <mat-grid-tile><mat-card class="mat-elevation-z8">
+        <mat-card-title class="card2">Planned Leave</mat-card-title>
+        <mat-card-content>
+          <div class="contentContainer">
+            <div class="skillBar">
+              <h4>8/10</h4>
+              <div class="skillBarContainer">
+                <div class="skillBarValue value-80"></div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card></mat-grid-tile>
+      <mat-grid-tile><mat-card class="mat-elevation-z8">
+        <mat-card-title class="card3">Unplanned Leave</mat-card-title>
+        <mat-card-content>
+          <div class="contentContainer">
+            <div class="skillBar">
+              <h4>2/10</h4>
+              <div class="skillBarContainer">
+                <div class="skillBarValue value-20"></div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card></mat-grid-tile>
+      <mat-grid-tile><mat-card class="mat-elevation-z8">
+        <mat-card-title class="card4">Pending Requests</mat-card-title>
+        <mat-card-content>
+          <h2>3</h2>
+        </mat-card-content>
+      </mat-card></mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="7:1">
+      <mat-grid-tile>
+        <form class="booking-form form-inline" action="#!" >
+          <select class="soflow" id="location" name="location">
+            <option>Short Term Disability</option>
+            <option>Long Term Disability</option>
+            <option>Paternity Leave</option>
+            <option>Loss Of Pay</option>
+            <option>Work From Home</option>
+            <option>On Travel</option>
+            <option>On Training</option>
+            <option>Bereavement Leave</option>
+            <option>Medical Leave</option>
+          </select>
+          <select class="soflow" id="location" name="location" id="stay-or-day" name="stay-or-day">
+            <option>Pending</option>
+            <option>Approved</option>
+            <option>Rejected</option>
+          </select>
+          <input type="date" id="check-in" placeholder="Check in" name="check-in">
+          <input type="date" id="quantity" placeholder="Adults" name="text">
+          <button class="booking-form--submit">Search</button>
+        </form>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <table class="mat-elevation-z8" width="95%" align="center">
+      <tr>
+        <th>Employee ID.</th>
+        <th>Employee</th>
+        <th>Designation</th>
+        <th>Email ID.</th>
+        <th>Reporting to</th>
+        <th>Leave Type</th>
+        <th>From</th>
+        <th>To</th>
+        <th>No of Days</th>
+        <th>Reason</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>12345</td>
+        <td><mat-icon>account_circle</mat-icon>lala ray</td>
+        <td>developer</td>
+        <td>lalashakti96@gmail.com</td>
+        <td>abc</td>
+        <td>Casual Leave</td>
+        <td>10/08/2020</td>
+        <td>12/08/2020</td>
+        <td>2</td>
+        <td>Vibing</td>
+        <td> <form>
+          <select >
+            <option >Pending</option>
+            <option >Approved</option>
+            <option >Rejected</option>
+
+          </select>
+          <br/>
+          <button mat-raised-button color="primary">Generate Slip</button>
+        </form></td>
+        <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+          <mat-menu #action="matMenu">
+            <button mat-menu-item>
+              <mat-icon>create</mat-icon>
+              <span>Edit</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu></td>
+      </tr>
+      <tr>
+      <td>12345</td>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>developer</td>
+      <td>lalashakti96@gmail.com</td>
+      <td>abc</td>
+      <td>Casual Leave</td>
+      <td>10/08/2020</td>
+      <td>12/08/2020</td>
+      <td>2</td>
+      <td>Vibing</td>
+      <td> <form>
+        <select >
+          <option >Pending</option>
+          <option >Approved</option>
+          <option >Rejected</option>
+        </select>
+      </form></td>
+      <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+        <mat-menu #action="matMenu">
+          <button mat-menu-item>
+            <mat-icon>create</mat-icon>
+            <span>Edit</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu></td>
+    </tr>
+      <tr>
+      <td>12345</td>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>developer</td>
+      <td>lalashakti96@gmail.com</td>
+      <td>abc</td>
+      <td>Casual Leave</td>
+      <td>10/08/2020</td>
+      <td>12/08/2020</td>
+      <td>2</td>
+      <td>Vibing</td>
+      <td> <form>
+        <select >
+          <option >Pending</option>
+          <option >Approved</option>
+          <option >Rejected</option>
+        </select>
+      </form></td>
+      <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+        <mat-menu #action="matMenu">
+          <button mat-menu-item>
+            <mat-icon>create</mat-icon>
+            <span>Edit</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu></td>
+    </tr>
+      <tr>
+      <td>12345</td>
+      <td><mat-icon>account_circle</mat-icon>lala ray</td>
+      <td>developer</td>
+      <td>lalashakti96@gmail.com</td>
+      <td>abc</td>
+      <td>Casual Leave</td>
+      <td>10/08/2020</td>
+      <td>12/08/2020</td>
+      <td>2</td>
+      <td>Vibing</td>
+      <td> <form>
+        <select >
+          <option >Pending</option>
+          <option >Approved</option>
+          <option >Rejected</option>
+        </select>
+      </form></td>
+      <td>    <button mat-icon-button [matMenuTriggerFor]="action" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+        <mat-menu #action="matMenu">
+          <button mat-menu-item>
+            <mat-icon>create</mat-icon>
+            <span>Edit</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu></td>
+    </tr>
+    </table></mat-tab>
+</mat-tab-group>
+
+
